@@ -1,0 +1,23 @@
+Description:
+  Generates a base spec_helper.rb for inclusion in the various other versions.
+  If a SPEC_TYPE is specified a specific helper for that type will be generated.
+
+Example:
+  rails generate harness_spec_helper
+
+  This will create:
+    spec/spec_helper.rb
+    spec/support/.keep
+    .rspec
+
+Example:
+  rails generate harness_spec_helper models
+
+  This will create:
+    spec/spec_helper.rb
+    spec/support/.keep
+    .rspec
+    spec/models_spec_helper.rb
+    spec/support_models/.keep
+    spec/models/.keep
+    app/models/.keep
