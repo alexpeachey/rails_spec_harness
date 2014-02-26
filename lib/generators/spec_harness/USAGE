@@ -1,0 +1,57 @@
+Description:
+  Set up your rails project for fast efficient testing.
+
+Example:
+  rails generate spec_harness
+
+  This will create:
+    spec/spec_helper.rb
+    spec/support/.keep
+    .rspec
+    spec/actions_spec_helper.rb
+    spec/support_actions/.keep
+    spec/actions/.keep
+    app/actions/.keep
+    spec/decorators_spec_helper.rb
+    spec/support_decorators/.keep
+    spec/decorators/.keep
+    app/decorators/.keep
+    spec/features_spec_helper.rb
+    spec/support_features/.keep
+    spec/features/.keep
+    app/features/.keep
+    spec/forms_spec_helper.rb
+    spec/support_forms/.keep
+    spec/forms/.keep
+    app/forms/.keep
+    spec/models_spec_helper.rb
+    spec/support_models/.keep
+    spec/models/.keep
+    app/models/.keep
+    spec/services_spec_helper.rb
+    spec/support_services/.keep
+    spec/services/.keep
+    app/services/.keep
+
+  This will add the following gems to your Gemfile under development/test:
+    rspec-rails
+    shoulda
+    capybara
+    poltergeist
+    factory_girl_rails
+    database_cleaner
+    simplecov
+    simplecov-html
+    guard
+    guard-rspec
+    rb-inotify, require: false
+    rb-fsevent, require: false
+    rb-fchange, require: false
+    better_errors
+    binding_of_caller
+    meta_request
+
+  This will add the following gems ungrouped:
+    draper
+    fob
+    resonsive_service
