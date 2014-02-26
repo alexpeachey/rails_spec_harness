@@ -3,8 +3,9 @@ require 'rails/generators/base'
 class SpecHarnessGenerator < Rails::Generators::Base
   class_option :gems, type: :boolean, default: true, desc: "Add gems to Gemfile"
   class_option :guardfile, type: :boolean, default: true, desc: "Create a Guardfile"
-  class_option :include_types, type: :array, default: [], desc: "Types of specs to specifically include"
-  class_option :exclude_types, type: :array, default: [], desc: "Types of specs to specifically exclude"
+  class_option :only_types, type: :array, default: [], desc: "The only types which should be set up"
+  class_option :include_types, type: :array, default: [], desc: "Additional types of specs to include"
+  class_option :exclude_types, type: :array, default: [], desc: "Types of specs to exclude"
 
   def generate_harness
     generate 'harness_spec_helper'
@@ -28,8 +29,8 @@ class SpecHarnessGenerator < Rails::Generators::Base
   end
 
   def required_spec_types
-    return options.include_types if options.include_types.any?
-    spec_types - (options.exclude_types.map {|t| t.underscore.pluralize})
+    return (options.only_types.map {|t| t.underscore.pluralize}) if options.only_types.any?
+    spec_types - (options.exclude_types.map {|t| t.underscore.pluralize}) + (options.include_types.map {|t| t.underscore.pluralize})
   end
 
   def watch_types
