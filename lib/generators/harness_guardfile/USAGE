@@ -1,0 +1,8 @@
+Description:
+  Generates a Guardfile set to only watch specific spec types
+
+Example:
+    rails generate harness_guardfile
+
+    This will create:
+        Guardfile

@@ -1,0 +1,9 @@
+guard :rspec, notification: true, cmd: 'rspec --color --format nested --tty', spec_paths: <%= spec_paths %> do
+  watch(%r{^spec/(<%= spec_type_matcher %>)/.+_spec\.rb$})
+  watch(%r{^spec/(<%= spec_type_matcher %>)_spec_helper\.rb$}) { |m| "spec/#{m[1]}" }
+  watch(%r{^spec/support_(<%= spec_type_matcher %>)/(.+)\.rb$}) { |m| "spec/#{m[1]}" }
+  watch(%r{^app/(<%= spec_type_matcher %>)/(.+)\.rb$}) { |m| "spec/#{m[1]}/#{m[2]}_spec.rb" }
+  
+  watch('/spec/base_spec_helper.rb') { <%= spec_paths %> }
+  watch(%r{^spec/support_common/(.+)\.rb$}) { <%= spec_paths %> }
+end
