@@ -1,0 +1,29 @@
+Description:
+    Add useful gems to your rails project
+
+Example:
+    rails generate harness_gems
+
+    This will add the following gems to your Gemfile under development/test:
+        rspec-rails
+        shoulda
+        capybara
+        poltergeist
+        factory_girl_rails
+        database_cleaner
+        simplecov
+        simplecov-html
+        guard
+        guard-rspec
+        rb-inotify, require: false
+        rb-fsevent, require: false
+        rb-fchange, require: false
+        better_errors
+        binding_of_caller
+        meta_request
+
+    This will add the following gems ungrouped:
+        draper
+        fob
+        resonsive_service
+
