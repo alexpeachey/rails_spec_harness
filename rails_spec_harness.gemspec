@@ -7,10 +7,10 @@ Gem::Specification.new do |spec|
   spec.name          = 'rails_spec_harness'
   spec.version       = RailsSpecHarness::VERSION
   spec.authors       = ['alexpeachey']
-  spec.email         = ['alex.peachey@gmail.com']
+  spec.email         = ['alex.peachey@originate.com']
   spec.summary       = 'Helpful generators for fast rails specs.'
   spec.description   = 'Make your specs sane with a set of helpers to isolate code and improve speed.'
-  spec.homepage      = 'https://github.com/alexpeachey/rails_spec_harness'
+  spec.homepage      = 'https://github.com/Originate/rails_spec_harness'
   spec.license       = 'MIT'
 
   spec.files         = `git ls-files -z`.split("\x0")
