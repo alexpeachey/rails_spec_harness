@@ -24,7 +24,7 @@ class HarnessSpecHelperGenerator < Rails::Generators::Base
       'decorators' => 'decorators_spec_helper.rb',
       'features' => 'features_spec_helper.rb',
       'forms' => 'forms_spec_helper.rb',
-      'modles' => 'models_spec_helper.rb'
+      'models' => 'models_spec_helper.rb'
     }
   end
 
