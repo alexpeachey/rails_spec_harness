@@ -9,7 +9,7 @@ a set of spec helpers and directory structures.
 
 Add this line to your application's Gemfile:
 
-    gem 'rails_spec_harness'
+    gem 'rails_spec_harness', require: false
 
 And then execute:
 
