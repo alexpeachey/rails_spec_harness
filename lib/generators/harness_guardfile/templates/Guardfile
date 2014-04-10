@@ -1,4 +1,4 @@
-guard :rspec, notification: true, cmd: 'rspec --color --format nested --tty', spec_paths: <%= spec_paths %> do
+guard :rspec, notification: true, cmd: 'rspec', spec_paths: <%= spec_paths %> do
   watch(%r{^spec/(<%= spec_type_matcher %>)/.+_spec\.rb$})
   watch(%r{^spec/(<%= spec_type_matcher %>)_spec_helper\.rb$}) { |m| "spec/#{m[1]}" }
   watch(%r{^spec/support_(<%= spec_type_matcher %>)/(.+)\.rb$}) { |m| "spec/#{m[1]}" }
