@@ -1,4 +1,5 @@
 require 'base_spec_helper'
+require File.expand_path('../../config/environment', __FILE__)
 require 'active_record'
 require 'rspec/rails/extensions/active_record/base'
 require 'shoulda'
