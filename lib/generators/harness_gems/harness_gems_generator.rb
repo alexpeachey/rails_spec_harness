@@ -5,6 +5,7 @@ class HarnessGemsGenerator < Rails::Generators::Base
     gem 'draper'
     gem 'fob'
     gem 'responsive_service'
+    gem 'attr_defaultable', require: 'extend_attr_defaultable'
     gem_group :development, :test do
       gem 'rspec-rails'
       gem 'shoulda'
