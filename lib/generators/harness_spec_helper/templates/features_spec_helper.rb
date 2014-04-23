@@ -1,13 +1,16 @@
 require 'base_spec_helper'
+require 'draper/railtie'
 require File.expand_path('../../config/environment', __FILE__)
 require 'rspec/rails'
 require 'capybara/rspec'
 require 'capybara/poltergeist'
 require 'factory_girl'
 require 'database_cleaner'
-Dir[Rails.root.join('spec/support_features/**/*.rb')].each {|f| require f}
+Dir[Rails.root.join('spec/support_features/**/*.rb')].each { |f| require f }
 
 ActiveRecord::Migration.check_pending! if defined?(ActiveRecord::Migration)
+
+Draper::ViewContext.test_strategy :full
 
 DatabaseCleaner.strategy = :truncation
 
