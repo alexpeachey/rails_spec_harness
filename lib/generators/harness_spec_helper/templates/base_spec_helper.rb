@@ -3,7 +3,6 @@ require 'rubygems'
 
 if ENV['COVERAGE']
   require 'simplecov'
-  require 'simplecov-rcov'
   SimpleCov.formatter = SimpleCov::Formatter::HTMLFormatter
   SimpleCov.start 'rails'
 end
