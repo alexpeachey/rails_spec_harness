@@ -55,7 +55,7 @@ You may find in some cases you'll need to require a specific file/library in you
 
 ## Contributing
 
-1. Fork it ( http://github.com/<my-github-username>/rails_spec_harness/fork )
+1. Fork it ( http://github.com/Originate/rails_spec_harness/fork )
 2. Create your feature branch (`git checkout -b my-new-feature`)
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
