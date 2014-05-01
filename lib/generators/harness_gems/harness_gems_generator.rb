@@ -20,6 +20,8 @@ class HarnessGemsGenerator < Rails::Generators::Base
       gem 'rb-inotify', require: false
       gem 'rb-fsevent', require: false
       gem 'rb-fchange', require: false
+    end
+    gem_group :development do
       gem 'better_errors'
       gem 'binding_of_caller'
       gem 'meta_request'
