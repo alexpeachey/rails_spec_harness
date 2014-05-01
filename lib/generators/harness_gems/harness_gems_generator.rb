@@ -6,7 +6,7 @@ class HarnessGemsGenerator < Rails::Generators::Base
     gem 'fob'
     gem 'responsive_service'
     gem 'attr_defaultable', require: 'extend_attr_defaultable'
-    gem_group :development, :test do
+    gem_group :test do
       gem 'rspec-rails'
       gem 'shoulda'
       gem 'capybara'
@@ -20,11 +20,6 @@ class HarnessGemsGenerator < Rails::Generators::Base
       gem 'rb-inotify', require: false
       gem 'rb-fsevent', require: false
       gem 'rb-fchange', require: false
-    end
-    gem_group :development do
-      gem 'better_errors'
-      gem 'binding_of_caller'
-      gem 'meta_request'
     end
   end
 end
