@@ -1,5 +1,5 @@
 require 'base_spec_helper'
-require 'responsive_service'
+require 'response_state'
 require 'draper'
 Draper::ViewContext.test_strategy :fast
 Dir[File.join(RAILS_ROOT, 'spec/support_decorators/**/*.rb')].each { |f| require f }

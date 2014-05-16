@@ -25,5 +25,6 @@ Example:
     This will add the following gems ungrouped:
         draper
         fob
-        resonsive_service
+        response_state
+        attr_defaultable
 
