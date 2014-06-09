@@ -1,3 +1,4 @@
+require 'rails/generators'
 require 'rails/generators/base'
 
 class HarnessGemsGenerator < Rails::Generators::Base
